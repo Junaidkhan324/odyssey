@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -13,7 +13,7 @@
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,7 +22,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
@@ -32,7 +32,214 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('../src/fonts/Rajdhani-Bold.woff2') format('woff2'),
+    url('../src/fonts/Rajdhani-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('../src/fonts/Rajdhani-Light.woff2') format('woff2'),
+    url('../src/fonts/Rajdhani-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('../src/fonts/Rajdhani-Medium.woff2') format('woff2'),
+    url('../src/fonts/Rajdhani-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('../src/fonts/Rajdhani-Regular.woff2') format('woff2'),
+    url('../src/fonts/Rajdhani-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('../src/fonts/Rajdhani-SemiBold.woff2') format('woff2'),
+    url('../src/fonts/Rajdhani-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Signika';
+  src: url('../src/fonts/Signika-Light.woff2') format('woff2'),
+    url('../src/fonts/Signika-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Signika';
+  src: url('../src/fonts/Signika-Medium.woff2') format('woff2'),
+    url('../src/fonts/Signika-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Signika';
+  src: url('../src/fonts/Signika-Regular.woff2') format('woff2'),
+    url('../src/fonts/Signika-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Signika';
+  src: url('../src/fonts/Signika-SemiBold.woff2') format('woff2'),
+    url('../src/fonts/Signika-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Signika';
+  src: url('../src/fonts/Signika-Bold.woff2') format('woff2'),
+    url('../src/fonts/Signika-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body::-webkit-scrollbar {
+  width: 5px;
+  position: absolute;
+  left: 0;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #919191;
+  outline: none;
+}
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+ul,
+ol,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+label,
+div,
+body {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Rajdhani';
+  background-color: #020203;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none !important;
+  transition: 0.3s all ease-in-out;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1618px;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+
+
+
+header {
+  padding: 48px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+
+.main-content {
+  height: 200vh;
+  background-color: #020203;
+  /* display: flex; */
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.pageLoader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  animation: loader 1s forwards;
+  animation-delay: 2s;
+}
+.pageLoader img{
+  max-width: 444px;
+  width: 100%;
+}
+
+
+@keyframes loader {
+  from {opacity: 1; transform: translateY(0px) scale(1);}
+  to {opacity: 0; transform: translateY(20px) scale(0);}
 }

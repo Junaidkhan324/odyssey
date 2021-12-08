@@ -1,0 +1,102 @@
+/* The Modal (background) */
+.modal {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: #000000;
+
+}
+
+.modal::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #020203 url(../../assets/AQwimm3.gif) no-repeat right top;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+.modalContent {
+    padding: 0;
+    width: 80%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modalContent iframe {
+    width: 100%;
+    height: 80vh;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close:after {
+    content: '';
+    width: 40.5px;
+    height: 133px;
+    position: absolute;
+    top: -112px;
+    right: 0px;
+    background-color: black;
+    z-index: -1;
+    border-left: 2px solid white;
+    border-right: 2px solid #ededed;
+    transition: 0.2s all ease-in-out;
+}
+
+
+.close::before {
+    content: '';
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: -10px;
+    right: -11px;
+    background-color: #020202;
+    z-index: -1;
+    border-radius: 50%;
+    border: 2px dashed #fff;
+    animation: rotate 9s linear infinite;
+    transition: 0.2s all ease-in-out;
+}
+.close img {
+    filter: invert(1);
+    max-width: 45px;
+    transition: 0.2s all ease-in-out;
+}
+.close:hover img{
+    filter: invert(0);
+}   
+.close:hover,   
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close:hover::before ,
+.close:hover::after {
+    background-color: #51E8EF;
+    border-color: #51E8EF;
+}
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }

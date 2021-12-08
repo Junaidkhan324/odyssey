@@ -1,0 +1,214 @@
+/* banner-css-start */
+.bannerSection .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100vh;
+    max-width: 1618px;
+    margin: 0 auto;
+}
+
+.bannerSection .bicycleImg {
+    max-width: 1110px;
+    height: 710px;
+    width: 100%;
+    margin-right: 69px;
+    position: fixed;
+    left: -460px;
+}
+
+.bannerSection .bicycleImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.bannerSection .bannerInner {
+    max-width: 24%;
+    width: 100%;
+    margin-bottom: 20vh;
+}
+
+.bannerSection .bannerInner span {
+    font-size: 64px;
+    line-height: 1.3;
+    color: #ffffff;
+
+}
+
+.bannerSection .bannerInner h1 {
+    font-size: 69px;
+    line-height: 1.3;
+    color: #51E8EF;
+}
+
+.bannerSection .bannerInner p {
+    font-size: 16px;
+    line-height: 1.3;
+    color: #ffffff;
+    margin-bottom: 26px;
+}
+
+a.mBtn {
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 3.9px;
+    color: #ffffff;
+    position: relative;
+    padding: 20px 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 15px;
+}
+
+a.mBtn::after {
+    content: '';
+    width: 80%;
+    height: 60%;
+    border-top-left-radius: 15PX;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    color: #51E8EF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s all ease-in-out;
+}
+
+a.mBtn::before {
+    content: '';
+    width: 80%;
+    height: 60%;
+    border-bottom-right-radius: 15PX;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    color: #51E8EF;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 0.3s all ease-in-out;
+}
+
+a.mBtn:hover {
+    color: #51E8EF;
+    background-color: #3531319a;
+}
+
+a.mBtn:hover::before,
+a.mBtn:hover::after {
+    width: 99%;
+    height: 99%;
+    border-radius: 15px;
+}
+
+.bannerSection .bicycleImg .details {
+    width: 88%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 52px;
+}
+
+.bannerSection .bicycleImg .details li {
+    position: relative;
+}
+
+.bannerSection .bicycleImg .details li::after {
+    content: '';
+    width: 15px;
+    height: 90px;
+    position: absolute;
+    top: -9px;
+    left: -29px;
+    background: url(../../assets/line.svg) no-repeat;
+}
+
+.bannerSection .bicycleImg .details li span {
+    font-size: 12px;
+    display: inline-block;
+    color: #ffffff;
+}
+
+.bannerSection .bicycleImg .details li h5 {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.bannerSection .bicycleImg .details li {
+    line-height: 1.3;
+    color: #ffffff;
+}
+
+.bannerSection .bicycleImg .tips {
+    width: 84px;
+    height: 84px;
+    position: absolute;
+    top: 0;
+    left: 54%;
+    cursor: pointer;
+}
+
+.bannerSection .bicycleImg .tooltipsInner {
+    background-color: #1d1d1d;
+    width: 250px;
+    transform: translateY(0);
+    overflow: hidden;
+    height: 0;
+    transition: 0.5s all ease-in-out;
+    z-index: 100000;
+    position: relative;
+    text-align: left;
+}
+
+.bannerSection .bicycleImg .tooltipsInner span {
+    font-size: 19px;
+    letter-spacing: 1.6px;
+    line-height: 1;
+    color: #51E8EF;
+    font-weight: 600;
+}
+
+.bannerSection .bicycleImg .tooltipsInner p {
+    font-size: 15px;
+    letter-spacing: -1px;
+    line-height: 1.6;
+    color: #fff;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+.bannerSection .bicycleImg .tooltipsInner a {
+    padding: 9px 21px;
+}
+
+.tooltipsInner a::after {
+    border-top-left-radius: 6PX;
+}
+
+.tooltipsInner a::before {
+    border-bottom-right-radius: 6PX;
+}
+
+.bannerSection .bicycleImg .too2 {
+    top: 16%;
+    left: 24%;
+}
+
+.bannerSection .bicycleImg .too3 {
+    top: 30%;
+    left: 31%;
+}
+
+.bannerSection .bicycleImg .too4 {
+    top: 29%;
+    left: 64%;
+}
+
+.bannerSection .bicycleImg .tips:hover .tooltipsInner {
+    transform: translateY(1);
+    height: 207px;
+    padding: 15px;
+
+}

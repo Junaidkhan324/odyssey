@@ -1,0 +1,93 @@
+.btf2 {
+    padding: 150px 0 400px;
+}
+
+.btf2 .container {
+    padding: 15px;
+    color: #ffffff;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.btf2 span {
+    display: inline-block;
+    margin-bottom: 45px;
+    font-size: 56px;
+    line-height: 1.3;
+    color: #ffffff;
+}
+
+.btf2 h3,
+.btf2 p {
+    font-size: 24px;
+    line-height: 1.1;
+    margin-bottom: 270px;
+}
+
+.btf2 p {
+    color: #ffffff5b;
+}
+
+.btf2 li {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #fff;
+    position: relative;
+    padding-left: 15px;
+}
+
+.btf2 li:after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #51E8EF;
+    position: absolute;
+    left: -10px;
+    top: 10px;
+    border-radius: 50%;
+}
+
+.btf2 h3 {
+    margin-bottom: 25px;
+}
+
+.btf2 .leftInner {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: auto;
+}
+
+.btf2 .leftInner>div {
+    width: 49%;
+    flex: 0 0 49%;
+}
+
+
+
+.btf2 .leftInner .btf2Img {
+    width: 76%;
+    flex: 0 0 91%;
+    position: relative;
+    transform: translateX(60px) scale(0.7);
+}
+
+.btf2 .leftInner .btf2Img img {
+    width: 100%;
+}
+
+.btf2 .leftInner .btf2Img img.img_c2,
+.btf2 .leftInner .btf2Img img.img_c1 {
+    max-width: 110px;
+    position: absolute;
+    bottom: 197px;
+    left: 208px;
+    transform: scale(2);
+}
+
+.btf2 .leftInner .btf2Img img.img_c2 {
+    /* transform: scale(1); */
+    max-width: 87px;
+    bottom: 209px;
+    left: 222px;
+}
