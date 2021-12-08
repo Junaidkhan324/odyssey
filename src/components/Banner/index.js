@@ -28,7 +28,7 @@ function Banner() {
                 trigger: bicycleImg.current,
                 start: "130% 47%",
                 end: "+=457",
-                scrub: 1,
+                scrub: 2,
                 // markers:true,
             },
         })
