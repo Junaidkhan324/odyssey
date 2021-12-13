@@ -10,35 +10,39 @@ const Brakes = () => {
     const b_k = useRef(null);
     const b_I = useRef(null);
     const b_F = useRef(null);
-    useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-        const tl4 = gsap.timeline({
-            scrollTrigger: {
-                trigger: btf2.current,
-                start: "2% 50%",
-                end: "+=300",
-                scrub: 2,
-                // markers:true,
-            }
-        });
-        tl4.to(b_k.current, 1 ,{x:0, scale:1}),
-        tl4.to(b_I.current, {scale:1 , stagger:1});
-        const tl5 = gsap.timeline({
-            scrollTrigger: {
-                trigger: btf2.current,
-                start: "2% 50%",
-                end: "+=300",
-                scrub: 2,
-                // markers:true,
-            }
-        });
-        tl5.to(b_F.current, {scale:1 , stagger:1});
-        
-    }, []);
+    if (window.innerWidth >= "1300") {
+        useEffect(() => {
+            gsap.registerPlugin(ScrollTrigger);
+            const tl4 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: btf2.current,
+                    start: "2% 50%",
+                    end: "+=300",
+                    scrub: 2,
+                    // markers:true,
+                }
+            });
+            tl4.to(b_k.current, 1, { x: 0, scale: 1 }),
+                tl4.to(b_I.current, { scale: 1, stagger: 1 });
+            const tl5 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: btf2.current,
+                    start: "2% 50%",
+                    end: "+=300",
+                    scrub: 2,
+                    // markers:true,
+                }
+            });
+            tl5.to(b_F.current, { scale: 1, stagger: 1 });
+
+        }, []);
+    } else {
+        console.log("mobile")
+    }
     return (
         <div className={styles.btf2} ref={btf2}>
             <div className={styles.container}>
-            <div className={`${styles.leftInner} ${styles.l_i}`}>
+                <div className={`${styles.leftInner} ${styles.l_i}`}>
                     <div>
                         <span className={styles.mainHedding}>Rear brakes</span>
                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
@@ -51,14 +55,14 @@ const Brakes = () => {
                         </ul>
                     </div>
                     <div id="btf2" className={`${styles.btf2Img} ${styles.b_k}`} ref={b_k}>
-                        <img className={styles.b_I} src= {bikeImg}  alt="bike"/>
-                        <img className={`${styles.img_c1} ${styles.b_I}`}  ref={b_I}   src={bikeRing} alt=""/>
-                        <img  className={`${styles.img_c2} ${styles.b_I}`} ref={b_F} src={bikeRing2} alt=""/>
+                        <img className={styles.b_I} src={bikeImg} alt="bike" />
+                        <img className={`${styles.img_c1} ${styles.b_I}`} ref={b_I} src={bikeRing} alt="" />
+                        <img className={`${styles.img_c2} ${styles.b_I}`} ref={b_F} src={bikeRing2} alt="" />
                     </div>
                 </div>
             </div>
         </div>
-    )   
+    )
 }
 
 export default Brakes

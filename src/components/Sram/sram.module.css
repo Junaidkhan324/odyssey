@@ -92,6 +92,7 @@
     max-height: 500px;
     height: 100%;
     position: relative;
+    font-size: 0;
 }
 
 .btf1 .btf1Videos img {
@@ -208,4 +209,109 @@ a.mBtn:hover::after {
     }
 }
 
+@media only screen and (max-width: 1124px) {
+    .mainHedding {
+        font-size: 41px;
+    }
+    .btf1 h2 {
+        font-size: 81px;
+    }
+    .leftInner  {
+        width: 91% !important;
+        margin-left: auto !important;
+    }
 
+}
+@media only screen and (max-width: 1600px) {
+    .backBtn {
+        top: 26vh;
+        left: 27%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .leftInner {
+        width: 100% !important;
+        margin-left: auto !important;
+    }
+    .btf1 {
+        padding: 160px 0;
+    }
+
+    .backBtn {
+        bottom: 30px;
+        left: auto;
+        top: auto;
+        right: 15px;
+    }
+    .backBtn img{
+        transform: rotate( 
+            90deg);
+    }
+    @keyframes backmove {
+        0% {
+            transform: translateY(0px);
+        }
+    
+        25% {
+            transform: translateY(-10px);
+        }
+    
+        50% {
+            transform: translateY(10px);
+        }
+    
+        75% {
+            transform: translateY(-10px);
+        }
+    
+        100% {
+            transform: translateY(0px);
+        }
+    }
+}
+@media only screen and (max-width: 1140px) {
+    .btf1 {
+        background-color: #0f2526;
+        border-bottom: 0.3px solid #51E8EF;
+    }
+        .btf1 .container{
+        max-width: 800px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .mainHedding {
+        font-size: 34px;
+    }
+    .btf1{
+        padding: 60px 15px 0;
+    }
+    .btf1 h2 {
+        font-size: 49px;
+    
+    }   
+    .btf1 .btf1Inner{
+        flex-direction: column;
+    }
+    .btf1 .btf1Inner p{
+        width: 100%;
+        flex: 0 0 100%;  
+        margin: 0 0 15px;
+    }
+    .btf1 .btf1Videos .playbtn{
+        bottom: 0px;
+        left: 12px;
+    }
+    .btf1 .btf1Videos .playbtn div{
+        width: 48.8px;
+        height: 48px;
+    }
+    .btf1 .btf1Videos .playbtn div svg {
+        width: 100%;
+        height: 100%;
+    }
+    .btf1 .btf1Videos .playbtn span{
+        width: 40%;
+        font-size: 12px;
+    }
+}

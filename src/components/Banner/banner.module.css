@@ -14,7 +14,7 @@
     width: 100%;
     margin-right: 69px;
     position: fixed;
-    left: -460px;
+    right: 63%;
 }
 
 .bannerSection .bicycleImg img {
@@ -211,4 +211,93 @@ a.mBtn:hover::after {
     height: 207px;
     padding: 15px;
 
+}
+
+
+
+@media only screen and (max-width: 1700px) {
+    .bannerSection .container {
+        max-width: 1450px;
+    }
+
+    .bannerSection .bicycleImg {
+        max-width: 930px;
+        height: 630px;
+        bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .bannerSection .bicycleImg {
+        max-width: 860px;
+        height: 600px;
+        right: 65%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .bannerSection .container {
+        padding: 0 60px;
+    }
+
+    .bannerSection .bicycleImg {
+        max-width: 690px;
+        height: 480px;
+        right: 0;
+        position: relative;
+    }
+
+}
+
+@media only screen and (max-width: 1140px) {
+    .bannerSection {
+        border-bottom: 0.3px solid #51E8EF;
+        
+    }
+    .bannerSection .container {
+        max-width: 800px;
+        align-items: flex-start;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .bannerSection .bannerInner {
+        max-width: 50%;
+        margin-bottom: 0;
+        padding: 105px 0 0;
+    }
+
+    .bannerSection .bicycleImg {
+        margin-right: 0px;
+        max-width: 586px;
+        height: 378px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .bannerSection .container {
+        padding: 0 20px;
+        align-items: center;
+    }
+    .bannerSection .bannerInner {
+        max-width: 350px;   
+     }
+     a.mBtn {
+        padding: 17px 35px;
+     }
+     .bannerSection .tips{
+         display: none;
+     }
+     .bannerSection .bicycleImg {
+        max-width: 496px;
+        height: 298px;
+     }
+     .bannerSection .bicycleImg .details{
+        max-width: 274px;
+        width: 100%;
+        bottom: 100%;
+        right: -11px;
+        padding-bottom: 52px;
+    }
+    
 }

@@ -91,3 +91,101 @@
     bottom: 209px;
     left: 222px;
 }
+
+@media only screen and (max-width: 1440px) {
+    .btf2 .leftInner .btf2Img img {
+        width: 60%;
+        flex: 0 0 73%;
+    }
+    .btf2 .leftInner .btf2Img img.img_c1{
+        max-width: 74px;
+    position: absolute;
+    bottom: 344px;
+    left: 119px;
+    transform: scale(2);
+    }
+    .btf2 .leftInner .btf2Img img.img_c2{
+        max-width: 62px;
+        bottom: 351px;
+        left: 126px;
+    }
+    
+}
+@media only screen and (max-width: 1300px) {
+    .btf2 .leftInner {
+        width: 100%;
+    }
+    .btf2 .leftInner .btf2Img{
+        width: 50%;
+        flex: 0 0 50%;
+        position: relative;
+        transform: translate(1px) scale(1);
+    }
+    .btf2 .leftInner .btf2Img img{
+        width: 100%;
+        flex: 0 0 100%;
+    }
+    .btf2 .leftInner .btf2Img img.img_c1{
+        max-width: 49px;
+        position: absolute;
+        bottom: 38.5%;
+        left: 34.2%;
+    }
+    .btf2 .leftInner .btf2Img img.img_c2{
+        max-width: 39px;
+        bottom: 39.5%;
+        left: 35.2%;
+    }
+    .btf2 {
+        padding: 150px 0 58px;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .btf2   .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .btf2 .leftInner {
+        align-items: center;
+    }
+    .btf2 .leftInner .btf2Img img.img_c1{
+        max-width: 36px;
+        position: absolute;
+        bottom: 30.5%;
+        left: 34.2%;
+    }
+    .btf2 .leftInner .btf2Img img.img_c2{
+        max-width: 29px;
+        bottom: 31.5%;
+        left: 35.2%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .btf2 .leftInner{
+        flex-direction: column;
+    }
+    .btf2 .leftInner >div {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+    .btf2 span{
+        font-size: 34px;
+        margin-bottom: 5px;
+    }
+    .btf2 p{
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    .btf2 .leftInner .btf2Img {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 320px;
+    }
+    .btf2 li{
+        width: 90%;
+        margin-left: auto;
+    }
+}

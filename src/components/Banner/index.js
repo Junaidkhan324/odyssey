@@ -8,33 +8,38 @@ function Banner() {
     const bannerInner = useRef(null);
     const bicycleImg = useRef(null);
     const detli = useRef(null);
-    // const detli = node.querySelectorAll('.details li')
-    useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    const tl1 = gsap.timeline({
-            scrollTrigger: {
-                trigger: bannerInner.current,
-                start: "top 47%",
-                end: "+=800",
-                pin:true,
-                scrub: 1,
-                // markers:true,
-                pinSpacing: false
-            },
-        })
-        tl1.to(bannerInner.current,  {x:100, autoAlpha: 0});
-        const tl2 = gsap.timeline({
-            scrollTrigger: {
-                trigger: bicycleImg.current,
-                start: "130% 47%",
-                end: "+=457",
-                scrub: 2,
-                // markers:true,
-            },
-        })
-        tl2.to(detli.current , {y:-30, autoAlpha: 0,   stagger:3}),
-        tl2.fromTo(bicycleImg.current,10, {x:'95%' ,  stagger:3},{x:'0%'})
-    }, []);
+    // const width = useWindowDimensions();
+    // console.log(window.innerWidth);
+    if (window.innerWidth >= "1300") {
+        useEffect(() => {
+            gsap.registerPlugin(ScrollTrigger);
+            const tl1 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: bannerInner.current,
+                    start: "top 47%",
+                    end: "+=800",
+                    pin: true,
+                    scrub: 1,
+                    pinSpacing: false,
+                },
+            })
+            tl1.to(bannerInner.current, { x: 100, autoAlpha: 0 });
+            const tl2 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: bicycleImg.current,
+                    start: "130% 47%",
+                    end: "+=457",
+                    scrub: 2,
+                    // markers: true,
+                },
+            })
+            tl2.to(detli.current, { y: -30, autoAlpha: 0, stagger: 3 }),
+                tl2.fromTo(bicycleImg.current, 10, { x: '95%', stagger: 3 }, { x: '0%' })
+        }, []);
+    } else {
+        console.log("mobile")
+    }
+
     return (
         <div className={styles.bannerSection}>
             <div className={styles.container}>
