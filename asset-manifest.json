@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/odyssey/static/css/main.03ebd825.chunk.css",
+    "main.js": "/odyssey/static/js/main.6dd3a49a.chunk.js",
+    "main.js.map": "/odyssey/static/js/main.6dd3a49a.chunk.js.map",
+    "runtime-main.js": "/odyssey/static/js/runtime-main.5812db2a.js",
+    "runtime-main.js.map": "/odyssey/static/js/runtime-main.5812db2a.js.map",
+    "static/js/2.6882e68d.chunk.js": "/odyssey/static/js/2.6882e68d.chunk.js",
+    "static/js/2.6882e68d.chunk.js.map": "/odyssey/static/js/2.6882e68d.chunk.js.map",
+    "static/js/3.9190e863.chunk.js": "/odyssey/static/js/3.9190e863.chunk.js",
+    "static/js/3.9190e863.chunk.js.map": "/odyssey/static/js/3.9190e863.chunk.js.map",
+    "index.html": "/odyssey/index.html",
+    "static/css/main.03ebd825.chunk.css.map": "/odyssey/static/css/main.03ebd825.chunk.css.map",
+    "static/js/2.6882e68d.chunk.js.LICENSE.txt": "/odyssey/static/js/2.6882e68d.chunk.js.LICENSE.txt",
+    "static/media/modal.module.css": "/odyssey/static/media/AQwimm3.3adaf59e.gif",
+    "static/media/Ellipse 6.5b6335bf.svg": "/odyssey/static/media/Ellipse 6.5b6335bf.svg",
+    "static/media/Ellipse 7.1288bf0a.svg": "/odyssey/static/media/Ellipse 7.1288bf0a.svg",
+    "static/media/App.css": "/odyssey/static/media/Signika-SemiBold.8798b3e3.woff",
+    "static/media/back.1e35c537.svg": "/odyssey/static/media/back.1e35c537.svg",
+    "static/media/bike-img.a1402f9c.png": "/odyssey/static/media/bike-img.a1402f9c.png",
+    "static/media/bikeweb_05-Current-View.c046d4e8.png": "/odyssey/static/media/bikeweb_05-Current-View.c046d4e8.png",
+    "static/media/btf-2-img.04e12eab.svg": "/odyssey/static/media/btf-2-img.04e12eab.svg",
+    "static/media/error.1b274ae3.png": "/odyssey/static/media/error.1b274ae3.png",
+    "static/media/banner.module.css": "/odyssey/static/media/line.17a01fac.svg",
+    "static/media/particles.26cace3d.gif": "/odyssey/static/media/particles.26cace3d.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5812db2a.js",
+    "static/js/2.6882e68d.chunk.js",
+    "static/css/main.03ebd825.chunk.css",
+    "static/js/main.6dd3a49a.chunk.js"
+  ]
+}
